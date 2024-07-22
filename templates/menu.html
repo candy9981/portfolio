@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {% block link %} {% include 'link.html' %} {% endblock %}
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/top.css" />
+    <link rel="stylesheet" href="../static/css/menu.css" />
+    <title>メニュー｜岡崎牧場焼肉店</title>
+  </head>
+  {% block header %} {% include 'header.html' %} {% endblock %}
+  <body id="body">
+    <div class="pankuzu">
+      <ul>
+        <li class="first">
+          <i class="fa fa-home" aria-hidden="true"></i><a href="/">ホーム</a>
+        </li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li>メニュー</li>
+      </ul>
+    </div>
+    <div class="toppart">
+      <p>MENU</p>
+      <h2>メニュー</h2>
+    </div>
+    <div class="container container-m">
+      <div class="row g-1">
+        <h2 class="text-center m">グランドメニュー</h2>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/大皿">
+              <img
+                src="../static/img/ペアペアセット.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                大皿セット
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/特選焼肉">
+              <img
+                src="../static/img/上ハラミ　001.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                特選焼肉
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/牛焼肉">
+              <img
+                src="../static/img/カルビ.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                牛焼肉
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/豚・鶏焼肉">
+              <img
+                src="../static/img/豚バラ　001.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                豚・鶏焼肉
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/ホルモン">
+              <img
+                src="../static/img/ホルモン・001.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                ホルモン
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/刺身">
+              <img
+                src="../static/img/炙り牛ユッケ.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                刺身
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/サラダ・菜">
+              <img
+                src="../static/img/グリーンサラダ.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                サラダ・菜
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/漬物">
+              <img
+                src="../static/img/キムチ盛(改).jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                漬物
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/飯・焼物">
+              <img
+                src="../static/img/石焼ビビンバ.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                飯・焼物
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/スープ・鍋">
+              <img
+                src="../static/img/冷麺(改).jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                スープ・鍋
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/アルコール">
+              <img
+                src="../static/img/アルコール.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                アルコール
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+          <div class="card">
+            <a href="/menu/アイス・ソフトドリンク">
+              <img
+                src="../static/img/ドリンク　フリー素材.jpg"
+                class="card-img-top rounded-0"
+              />
+              <div class="card-header bg-white border-0"></div>
+              <h5 class="card-title font-weight-bold text-center">
+                ドリンク・アイス
+                <i class="fa fa-angle-right fa-lg color" aria-hidden="true"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="text-white">ランチ</h2>
+          <div class="card custom-card mc">
+            <a href="/menu/ランチ">
+              <img src="../static/img/仮ランチ.jpg" class="card-img-top" />
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="text-white">メニューブック</h2>
+          <div class="card custom-card mc">
+            <a id="modal">
+              <img
+                src="../static/img/メニューブック.jpg"
+                class="card-img-top"
+              />
+            </a>
+            <dialog id="dia">
+              <div id="main-image">
+                <img src="../static/img/メニューブック1.jpg" />
+              </div>
+              <div id="thumbnail-gallery">
+                <img
+                  src="../static/img/メニューブック1.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック1.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック2.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック2.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック3.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック3.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック4.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック4.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック5.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック5.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック6.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック6.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック7.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック7.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック8.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック8.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック9.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック9.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック10.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック10.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック11.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック11.jpg')"
+                />
+                <img
+                  src="../static/img/メニューブック12.jpg"
+                  onclick="changeMainImage('../static/img/メニューブック12.jpg')"
+                />
+              </div>
+              <div class="right">
+                <button class="close-button" id="modalBtn">×</button>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pagetop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <script src="../static/js/script.js"></script>
+    <script src="../static/js/modal.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  {% block footer %} {% include 'footer.html'%} {% endblock %}
+</html>

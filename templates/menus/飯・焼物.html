@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {% block link %} {% include 'link.html' %} {% endblock %}
+    <link rel="stylesheet" href="../static/css/top.css" />
+    <link rel="stylesheet" href="../static/css/menu.css" />
+    <link rel="stylesheet" href="../static/css/inmenu.css" />
+    <title>飯・焼物</title>
+  </head>
+  {% block header %} {% include 'header.html' %} {% endblock %}
+  <body>
+    <div class="pankuzu">
+      <ul>
+        <li class="first">
+          <i class="fa fa-home" aria-hidden="true"></i><a href="/">ホーム</a>
+        </li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li><a href="/menu">メニュー</a></li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li>飯・焼物</li>
+      </ul>
+    </div>
+    <div class="toppart">
+      <p>MENU</p>
+      <h2>飯・焼物</h2>
+    </div>
+    <div class="container t">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/石焼ビビンバ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />石焼ビビンバ</h5>
+              <h2 class="right">1,100円<span>(税込1,210円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img
+              src="../static/img/石焼ユッケビビンバ.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-titles"><br />石焼ユッケビビンバ</h5>
+              <h2 class="right">1,430円<span>(税込1,573円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/ビビンバ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />ビビンバ</h5>
+              <h2 class="right">900円<span>(税込990円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/ユッケビビンバ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />ユッケビビンバ</h5>
+              <h2 class="right">1,320円<span>(税込1,452円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img
+              src="../static/img/石焼ガーリックライス.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-titles"><br />石焼ガーリックライス</h5>
+              <h2 class="right">900円<span>(税込990円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/牛トロ丼.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />パイン牛トロ丼</h5>
+              <h2 class="right">920円<span>(税込1,012円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/牛すじ丼.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />パイン牛すじ丼</h5>
+              <h2 class="right">900円<span>(税込990円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/牛すじ煮込み.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />パイン牛すじ煮込み</h5>
+              <h2 class="right">580円<span>(税込628円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/クッパ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />クッパ</h5>
+              <h2 class="right">550円<span>(税込605円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/海鮮チヂミ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />海鮮チヂミ</h5>
+              <h2 class="right">660円<span>(税込726円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/韓国のり.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />韓国のり</h5>
+              <h2 class="right">120円<span>(税込132円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/どんぐりたまご.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />どんぐり卵</h5>
+              <h2 class="right">120円<span>(税込132円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/ライス.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />ライス(小・中・大)</h5>
+              <h4 class="right">
+                小210円<span>(税込231円)</span><br />中260円<span
+                  >(税込286円)</span
+                ><br />大300円<span>(税込330円)</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <a href="/menu" class="btn">
+          <p>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            メニュー一覧に戻る
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="pagetop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <script src="../static/js/script.js">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  {% block footer %} {% include 'footer.html'%} {% endblock %}
+</html>

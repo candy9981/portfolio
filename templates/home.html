@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta
+      name="description"
+      content="『旨いを届けたい』岡崎牧場焼肉店は、主に自社ブランドのパイン牛を提供している牧場直営の美味しい焼肉屋です。安心安全でより新鮮な商品をお客様にお届けしております。"
+    />
+    <meta
+      name="keywords"
+      content="岡崎牧場焼肉店,パイン牛,焼肉,焼肉店,宮崎,ドライエイジング,生肉"
+    />
+    <meta name="author" content="Yakiniku Okazaki Bokujo" />
+    {% block link %} {% include 'link.html' %} {% endblock %}
+    <link rel="stylesheet" href="../static/css/home.css" />
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="../static/js/jquery.flexslider-min.js"
+    ></script>
+    <script type="text/javascript">
+      $(window).load(function () {
+        $("#MainVisual").flexslider({
+          animation: "fade",
+          slideshow: "true",
+          pauseOnAction: "false",
+          slideshowSpeed: 4500,
+          start: function (slider) {
+            $("body").removeClass("loading");
+          },
+        });
+      });
+    </script>
+    <title>岡崎牧場焼肉店</title>
+  </head>
+  {% block header %} {% include 'header.html' %} {% endblock %}
+  <body>
+    <div id="MainVisual">
+      <div class="flexslider">
+        <ul class="slides">
+          <li><img src="../static/img/メインビジュアル画像1.jpg" /></li>
+          <li><img src="../static/img/メインビジュアル画像2.jpg" /></li>
+          <li><img src="../static/img/メインビジュアル画像3.jpg" /></li>
+        </ul>
+        <img class="catch" src="../static/img/うまい.png" />
+      </div>
+    </div>
+    <div class="home">
+      <div class="lefthome">
+        <a href="/menu">
+          <figure>
+            <img src="../static/img/生肉・002.jpg" />
+            <figcaption>
+              <h3>メニュー</h3>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="/seats">
+          <figure>
+            <img src="../static/img/テーブル.jpg" />
+            <figcaption>
+              <h3>お席</h3>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="/access">
+          <figure class="noborder">
+            <img src="../static/img/江平外観.jpg" />
+            <figcaption>
+              <h3>アクセス</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+      <p class="mb">パイン牛</p>
+      <div class="righthome">
+        <h3>
+          <img class="hide" src="../static/img/h3-title2.png" />
+        </h3>
+        <div class="extd">
+          <img src="../static/img/icon.ico" class="img-fluid" />
+          <p>
+            当店ではパイン牛の焼肉をご提供しております。<br />パイン牛とは自社直営の牧場にて、宮崎牛の母牛にパイナップル酵素を含んだ飼料を与え育てた牛です。特に赤身の旨みが際立っており、豊かな風味と旨味が特徴です。
+          </p>
+        </div>
+        <div class="midflex">
+          <img src="../static/img/岡崎社長・001.jpg" />
+          <img src="../static/img/岡崎牧場.jpg" />
+          <img src="../static/img/牧場.jpg" />
+        </div>
+        <h2>系列店のご紹介</h2>
+        <hr />
+        <div class="container my-1">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="bold">岡崎牧場ステーキ店</h3>
+              <table cellpadding="5">
+                <tbody>
+                  <tr>
+                    <th>住所</th>
+                    <td>宮崎県宮崎市清水1丁目2-3</td>
+                  </tr>
+                  <tr>
+                    <th>TEL</th>
+                    <td>0985-29-1848</td>
+                  </tr>
+                  <tr>
+                    <th>営業時間</th>
+                    <td>
+                      11:00～15:00 (LO※14:30)
+                      <br />
+                      17:00～22:00 (LO※21:30)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>定休日</th>
+                    <td>火曜日</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-6 d-align">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.6104251827664!2d131.41879077449468!3d31.917180674034718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b7dfe703ce39%3A0xb6bf76417e2eac04!2z5bKh5bSO54mn5aC044K544OG44O844Kt5bqXJueEvOiCieW6lw!5e0!3m2!1sja!2sjp!4v1719984203986!5m2!1sja!2sjp"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="row my-1 align-items-center">
+            <div class="col-6">
+              <img
+                src="../static/img/ステーキ店外観.jpg"
+                class="img-fluid"
+                alt="店舗2"
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="../static/img/ステーキ店内装.jpg"
+                class="img-fluid"
+                alt="店舗3"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container my-1">
+          <div class="row">
+            <div class="col-md-6 d-align">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7895.746839842592!2d131.4467991260952!3d31.921167037666706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b9f662f9bf79%3A0x5d29861a5a033ba3!2z5qCq5byP5Lya56S-IOWyoeW0jueJp-WgtCDmnKznpL4!5e0!3m2!1sja!2sjp!4v1720162204849!5m2!1sja!2sjp"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col-md-6">
+              <h3 class="bold">岡崎牧場精肉総本店</h3>
+              <table cellpadding="2">
+                <tbody>
+                  <tr>
+                    <th>住所</th>
+                    <td>
+                      宮崎県宮崎市新別府町雀田1185番地
+                      <br />
+                      宮崎市中央卸売市場内
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>TEL</th>
+                    <td>0985-31-1745</td>
+                  </tr>
+                  <tr>
+                    <th>営業時間</th>
+                    <td>AM6:00～PM3:00</td>
+                  </tr>
+                  <tr>
+                    <th>定休日</th>
+                    <td>日曜・祝日・隔週水曜日</td>
+                  </tr>
+                  <tr>
+                    <th>URL</th>
+                    <td>
+                      <a href="https://www.okazaki-bokujyo.co.jp/"
+                        >https://www.okazaki-bokujyo.co.jp/</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row my-1 align-items-center">
+            <div class="col-6">
+              <img
+                src="../static/img/岡崎牧場精肉総本店.jpg"
+                class="img-fluid"
+                alt="店舗2"
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="../static/img/コロッケ.jpg"
+                class="img-fluid"
+                alt="店舗3"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container my-1">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="bold">岡崎牧場大瀬直売所</h3>
+              <table cellpadding="5">
+                <tbody>
+                  <tr>
+                    <th>住所</th>
+                    <td>宮崎県宮崎市大字大瀬町2328-1<br />杉尾青果内</td>
+                  </tr>
+                  <tr>
+                    <th>TEL</th>
+                    <td>0985-36-0785</td>
+                  </tr>
+                  <tr>
+                    <th>営業時間</th>
+                    <td>AM9:00～PM7:00</td>
+                  </tr>
+                  <tr>
+                    <th>定休日</th>
+                    <td>月曜日</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-6 d-align">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.6303011905206!2d131.3793761744976!3d31.970924874010915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b11544215d29%3A0x41e7215dec993ec2!2z5p2J5bC-6Z2S5p6c!5e0!3m2!1sja!2sjp!4v1720403762813!5m2!1sja!2sjp"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="row my-1 align-items-center">
+            <div class="col-6">
+              <img
+                src="../static/img/大瀬直売所.jpg"
+                class="img-fluid"
+                alt="店舗2"
+              />
+            </div>
+            <div class="col-6">
+              <img
+                src="../static/img/パインイメージ.jpg"
+                class="img-fluid"
+                alt="店舗3"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <h3 class="right">アクセス数:{{ count }}</h3>
+      </div>
+    </div>
+    <div class="pagetop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <script src="../static/js/script.js" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  {% block footer %} {% include 'footer.html'%} {% endblock %}
+</html>

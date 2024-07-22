@@ -1,0 +1,218 @@
+@import url("flexslider.css");
+.flex-control-nav {
+  display: none;
+}
+body {
+  .home{
+    max-width: 1064px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    .lefthome{
+      width: 23%;
+      float: left;
+      margin-left: 10px;
+      figure{
+        background-color: black;
+        img{
+          width: 100%;
+          max-height: 140px;
+        }
+        h3{
+          color: white;
+          background: url(../img/back1.jpg);
+        }
+      }
+      a{
+        text-decoration: none;
+      }
+      a:hover{
+        img{
+          opacity: 0.5;
+        }
+      }
+    }
+    .mb{
+      display: none;
+    }
+    .righthome{
+      padding: 0 3% 3% 3%;
+      width: 70%;
+      background-color:rgb(250,243,243);
+      float: right;
+      height: auto;
+      margin-right: 30px;
+      margin-bottom: 10px;
+      color: #8e463e !important;
+      .bold{
+        font-weight: bold;
+      }
+      h3{
+        margin-bottom: 2%;
+        font-size: 23px;
+      }
+      .d-align{
+        align-self: flex-end;
+      }
+      table{
+        border-collapse: separate;
+        tbody{
+          tr{
+            vertical-align:middle;
+            border-spacing: 10px;
+            th{
+              text-align: center;
+              background-color: #F0D2D3 !important;
+              border-top-left-radius: 4px;
+              border-bottom-left-radius: 4px;
+            }
+          }
+        }
+      }
+      .right{
+        text-align: end;
+      }
+      .midflex{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        img{
+          max-width: 30%;
+          height: auto;
+          border-radius: 10%;
+        }
+      }
+      .extd{
+        display: flex;
+        align-items: center;
+        img{
+          max-width: 50%;
+        }
+        p{
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  h2 {
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+  }
+  .flexslider{
+    .catch{
+      position: absolute;
+      text-align: center;
+      width: 45%;
+      min-width: 250px;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      margin:0;
+      padding:0;
+      z-index: 10;
+    }
+  }
+  img{
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+footer{
+  clear: both;
+}
+@media screen and (max-width:500px) {
+  body{
+    .slides{
+      p{
+        font-size: 25px;
+        width: 180px;
+      }
+    }
+  }
+}
+@media screen and (max-width:650px) {
+  body{
+    .home{
+      float: none;
+      .lefthome{
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        figure{
+          display: flex;
+          border-bottom: solid 1px white;
+          background: url(../img/back1.jpg);
+          margin-bottom: 0;
+          h3{
+            background: none;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding-left: 5px;
+            align-items: center;
+          }
+          img{
+            width: 134px;
+            height: 100px;
+          }
+        }
+        .noborder{
+          border-bottom: none;
+        }
+      }
+      .mb{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        background-color: #3D1712;
+        color: white;
+        margin-top: 10px;
+      }
+      .righthome{
+        float: none;
+        margin: 0 auto;
+        margin-top: 0;
+        width: 80%;
+        .hide{
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:885px) {
+  body{
+    .home{
+      .righthome{
+        h3{
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .extd{
+          display: block;
+          img{
+            display: block;
+            margin: auto;
+          }
+          p{
+            font-size: medium;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 990px) {
+  .flexslider {
+    padding-top: 8%;
+  }
+}

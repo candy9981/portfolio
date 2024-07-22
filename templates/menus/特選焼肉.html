@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {% block link %} {% include 'link.html' %} {% endblock %}
+    <link rel="stylesheet" href="../static/css/top.css" />
+    <link rel="stylesheet" href="../static/css/menu.css" />
+    <link rel="stylesheet" href="../static/css/inmenu.css" />
+    <title>特選焼肉</title>
+  </head>
+  {% block header %} {% include 'header.html' %} {% endblock %}
+  <body>
+    <div class="pankuzu">
+      <ul>
+        <li class="first">
+          <i class="fa fa-home" aria-hidden="true"></i><a href="/">ホーム</a>
+        </li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li><a href="/menu">メニュー</a></li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li>特選焼肉</li>
+      </ul>
+    </div>
+    <div class="toppart">
+      <p>MENU</p>
+      <h2>特選焼肉</h2>
+    </div>
+    <div class="container t">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/特上カルビ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />特上カルビ</h5>
+              <h2 class="right">1,980円<span>(税込2,178円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/特上ロース.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />特上ロース</h5>
+              <h2 class="right">1,980円<span>(税込2,178円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/特上ハラミ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />特上ハラミ</h5>
+              <h2 class="right">1,780円<span>(税込1,958円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/特上タン.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />特上和牛タン(厚切り・薄切り)</h5>
+              <h2 class="right">1,560円<span>(税込1,716円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/特上ヒレ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />特上ヒレ</h5>
+              <h2 class="right">2,100円<span>(税込2,310円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/エイジング中.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />ドライエイジングビーフ</h5>
+              <h2 class="right">3,400円<span>(税込3,740円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/焼しゃぶ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />焼しゃぶ(サンチュ付き)</h5>
+              <h2 class="right">2,520円<span>(税込2,772円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/焼きすき.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />焼すき(サンチュ付き)</h5>
+              <h2 class="right">2,760円<span>(税込3,036円)</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <a href="/menu" class="btn">
+          <p>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            メニュー一覧に戻る
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="pagetop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <script src="../static/js/script.js">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  {% block footer %} {% include 'footer.html'%} {% endblock %}
+</html>

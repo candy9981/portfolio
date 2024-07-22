@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {% block link %} {% include 'link.html' %} {% endblock %}
+    <link rel="stylesheet" href="../static/css/top.css" />
+    <link rel="stylesheet" href="../static/css/seats.css" />
+    <title>お席｜岡崎牧場焼肉店</title>
+  </head>
+  {% block header %} {% include 'header.html' %} {% endblock %}
+  <body>
+    <div class="pankuzu">
+      <ul>
+        <li class="first">
+          <i class="fa fa-home" aria-hidden="true"></i><a href="/">ホーム</a>
+        </li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li>お席</li>
+      </ul>
+    </div>
+    <div class="toppart">
+      <p>SEATS</p>
+      <h2>お席</h2>
+    </div>
+    <div class="contena">
+      <h3 class="c">テーブル</h3>
+      <div class="mgn">
+        <img src="../static/img/テーブル.jpg" />
+        <h5>
+          テーブル 4名様 ✖ 9席<br />2名様 ✖ 1席<br />
+          <p>
+            火加減を調整できるロースターで、ゆったりと焼肉を楽しむことができるシンプルなテーブル席です。
+          </p>
+        </h5>
+      </div>
+    </div>
+    <div class="contena">
+      <h3 class="c">座敷</h3>
+      <div class="mgn">
+        <img src="../static/img/座敷.jpg" />
+        <h5>
+          座敷【半個室】 8名様 ✖ 3席<br />6名様 ✖ 1席<br />
+          <p>
+            掘りごたつ式の座敷で、広めのテーブルになります。<br />小さなお子様やお年寄りの方も安心して焼肉を楽しめます。
+          </p>
+        </h5>
+      </div>
+    </div>
+    <div class="contena">
+      <h3 class="c">七輪</h3>
+      <div class="mgn">
+        <img src="../static/img/七輪.jpg" />
+        <h5>
+          七輪【座敷】 4名様 ✖ 6席<br />
+          <p>
+            ※ディナー限定<br />本格的な炭火焼きの焼肉を味わえる七輪の掘りごたつ式座敷です。
+          </p>
+        </h5>
+      </div>
+    </div>
+    <div class="pagetop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <script src="../static/js/script.js">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  {% block footer %} {% include 'footer.html' %} {% endblock %}
+</html>

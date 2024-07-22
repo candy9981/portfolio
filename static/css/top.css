@@ -1,0 +1,72 @@
+.pankuzu ul {
+  margin-top: 1%;
+  display: flex;
+}
+.pankuzu ul li {
+  margin-left: 0%;
+  margin-left: 10px;
+  list-style: none;
+  font-size: 1.2em;
+  color: white;
+}
+.pankuzu ul li a {
+  text-decoration: none;
+  color: #ebc92b;
+}
+.pankuzu ul li a:hover{
+  border-bottom: solid 1px #ebc92b;
+}
+@media screen and (max-width: 600px) {
+  .pankuzu ul {
+    margin-top: 15% !important;
+  }
+  .pankuzu ul li {
+    font-size: 1rem;
+    margin: 0;
+  }
+  header {
+    margin-top: -15% !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .pankuzu ul {
+    margin-top: 11%;
+  }
+  header {
+    margin-top: -11%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .pankuzu ul li {
+    font-size: 0.8rem;
+  }
+  .pankuzu ul .first {
+    margin-left: -8%;
+  }
+}
+.toppart {
+  color: white;
+}
+.toppart p {
+  width: 38%;
+  margin: 0 auto 10px;
+  text-align: center;
+  font-size: 1.7rem;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #fff;
+}
+
+.toppart h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .toppart p {
+    font-size: 1.2rem;
+  }
+  .toppart h2 {
+    font-size: 2rem;
+  }
+}

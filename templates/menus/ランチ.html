@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {% block link %} {% include 'link.html' %} {% endblock %}
+    <link rel="stylesheet" href="../static/css/top.css" />
+    <link rel="stylesheet" href="../static/css/menu.css" />
+    <link rel="stylesheet" href="../static/css/inmenu.css" />
+    <title>ランチ</title>
+  </head>
+  {% block header %} {% include 'header.html' %} {% endblock %}
+  <body>
+    <div class="pankuzu">
+      <ul>
+        <li class="first">
+          <i class="fa fa-home" aria-hidden="true"></i><a href="/">ホーム</a>
+        </li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li><a href="/menu">メニュー</a></li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li>ランチ</li>
+      </ul>
+    </div>
+    <div class="toppart">
+      <p>MENU</p>
+      <h2>ランチ</h2>
+    </div>
+    <div class="container t">
+      <h3 class="color">
+        ※これらのメニューはランチタイム(11:30~14:30)限定です
+      </h3>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/カルビランチ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />パイン牛カルビランチ</h5>
+              <h2 class="right">1,900円<span>(税込2,090円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/カルタンランチ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />パイン牛カルビ・牛タンランチ</h5>
+              <h2 class="right">1,600円<span>(税込1,760円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/カルバラランチ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />パイン牛カルビ・豚バラランチ</h5>
+              <h2 class="right">1,600円<span>(税込1,760円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/カルホルランチ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />パイン牛カルビ・ホルモンランチ</h5>
+              <h2 class="right">1,600円<span>(税込1,760円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/ホルモンランチ.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />ホルモンランチ</h5>
+              <h2 class="right">1,500円<span>(税込1,650円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/パイン牛カレー.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />パイン牛カレー(中辛)</h5>
+              <h2 class="right">820円<span>(税込902円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/キッズメニュー.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />キッズランチ</h5>
+              <h2 class="right">600円<span>(税込660円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/カレールー.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />カレールゥ</h5>
+              <h2 class="right">550円<span>(税込605円)</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <a href="/menu" class="btn">
+          <p>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            メニュー一覧に戻る
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="pagetop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <script src="../static/js/script.js">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  {% block footer %} {% include 'footer.html'%} {% endblock %}
+</html>

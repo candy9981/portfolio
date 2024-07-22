@@ -1,0 +1,50 @@
+.t {
+  padding-top: 40px;
+}
+.t .card {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.t .card-body .card-titles {
+  padding-left: 10px;
+  font-weight: 900;
+}
+.t .card-body .card-text {
+  padding-left: 10px;
+  font-weight: 500;
+}
+.t .card-body .right {
+  text-align: end;
+  padding-right: 10px;
+}
+.t .card-body span {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.t .box {
+  text-align: center;
+}
+.t .box .btn {
+  display: inline-block;
+  margin-top: 30px;
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.t .box .btn :hover {
+  color: black;
+}
+.t .box .btn p {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 3px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .t .box .btn {
+    width: 33%;
+  }
+}/*# sourceMappingURL=inmenu.css.map */

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {% block link %} {% include 'link.html' %} {% endblock %}
+    <link rel="stylesheet" href="../static/css/top.css" />
+    <link rel="stylesheet" href="../static/css/menu.css" />
+    <link rel="stylesheet" href="../static/css/inmenu.css" />
+    <title>大皿</title>
+  </head>
+  {% block header %} {% include 'header.html' %} {% endblock %}
+  <body>
+    <div class="pankuzu">
+      <ul>
+        <li class="first">
+          <i class="fa fa-home" aria-hidden="true"></i><a href="/">ホーム</a>
+        </li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li><a href="/menu">メニュー</a></li>
+        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        <li>大皿セット</li>
+      </ul>
+    </div>
+    <div class="toppart">
+      <p>MENU</p>
+      <h2>大皿セット</h2>
+    </div>
+    <div class="container t">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/パイン牛セット.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />パイン牛セット</h5>
+              <p class="card-text">
+                各1.5人前 パイン牛ロース/パイン牛カルビ/パイン牛ハラミ<br />焼野菜/サンチュ
+              </p>
+              <h2 class="right">4,570円<span>(税込5,027円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/特選焼肉.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />特選焼肉セット</h5>
+              <p class="card-text">
+                各1人前 特上ロース/特上カルビ/特上ヒレ<br />焼野菜/サンチュ
+              </p>
+              <h2 class="right">5,840円<span>(税込6,424円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/ファミリーA.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />ファミリーAセット</h5>
+              <p class="card-text">
+                パイン牛カルビ5人前<br />各1人前 塩タン/豚バラ/いずみ鶏ももみ<br />ホルモンセット3人前<br />焼野菜/サンチュ
+              </p>
+              <h2 class="right">7,540円<span>(税込8,294円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/ファミリーB.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />ファミリーBセット</h5>
+              <p class="card-text">
+                パイン牛カルビ3人前<br />各1人前 塩タン/豚バラ<br />ホルモンセット2人前<br />焼野菜/サンチュ
+              </p>
+              <h2 class="right">5,220円<span>(税込5,742円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/ペアペアセット.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />ペアペアセット</h5>
+              <p class="card-text">
+                各1人前 パイン牛ロース/パイン牛カルビ/塩タン/いずみ鶏ももみ<br />焼野菜/サンチュ
+              </p>
+              <h2 class="right">3,780円<span>(税込4,158円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/塩焼肉セット.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />塩焼肉セット</h5>
+              <p class="card-text">
+                各1人前 タン塩/いずみ鶏ももみ/豚ロース<br />サンチュ
+              </p>
+              <h2 class="right">2,100円<span>(税込2,310円)</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card custom-card">
+            <img src="../static/img/ホルモンセット.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-titles"><br />ホルモンセット</h5>
+              <p class="card-text">テッチャン/センマイ/レバー/ミノ/ハート</p>
+              <h2 class="right">2,310円<span>(税込2,541円)</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <a href="/menu" class="btn">
+          <p>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            メニュー一覧に戻る
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="pagetop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <script src="../static/js/script.js">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  {% block footer %} {% include 'footer.html'%} {% endblock %}
+</html>
