@@ -1,26 +1,11 @@
 from flask import Flask, render_template
-import psycopg2
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 
-# データベース接続の確立
-conn = psycopg2.connect(
-    host='127.0.0.1',
-    database='postgres',
-    user='workuser',
-    password='he542158'
-)
-
 @app.route('/')
 def top():
-    cur = conn.cursor()
-    cur.execute("SELECT count FROM visit_table")
-    count = cur.fetchone()[0]
-    count += 1
-    cur.execute("UPDATE visit_table SET count = %s;",(count,))
-    conn.commit()
-    return render_template('/home.html', count=count)
+    return render_template('/home.html')
 
 @app.route('/menu')
 def menu():
