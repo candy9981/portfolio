@@ -19,9 +19,9 @@ def seets():
 def access():
     return render_template('/access.html')
 
-@app.route('/menu/大皿')
+@app.route('/menu/platter')
 def oozara():
-    return render_template('menus/platter.html')
+    return render_template('menus/大皿.html')
 
 @app.route('/menu/特選焼肉')
 def tokusen():
