@@ -23,53 +23,53 @@ def access():
 def oozara():
     return render_template('menus/大皿.html')
 
-@app.route('/menu/特選焼肉')
+@app.route('/menu/specialbeef')
 def tokusen():
-    return render_template('menus/specialbeef.html')
+    return render_template('menus/特選焼肉.html')
 
-@app.route('/menu/牛焼肉')
+@app.route('/menu/beef')
 def beef():
-    return render_template('menus/beef.html')
+    return render_template('menus/牛焼肉.html')
 
-@app.route('/menu/豚・鶏焼肉')
+@app.route('/menu/porkchicken')
 def pork():
-    return render_template('menus/porkchicken.html')
+    return render_template('menus/豚・鶏焼肉.html')
 
-@app.route('/menu/ホルモン')
+@app.route('/menu/innards')
 def horumon():
-    return render_template('menus/innards.html')
+    return render_template('menus/ホルモン.html')
 
-@app.route('/menu/刺身')
+@app.route('/menu/sashimi')
 def rare():
-    return render_template('menus/sashimi.html')
+    return render_template('menus/刺身.html')
 
-@app.route('/menu/サラダ・菜')
+@app.route('/menu/salad')
 def salad():
-    return render_template('menus/salad.html')
+    return render_template('menus/サラダ・菜.html')
 
-@app.route('/menu/漬物')
+@app.route('/menu/pickles')
 def tukemono():
-    return render_template('menus/pickles.html')
+    return render_template('menus/漬物.html')
 
-@app.route('/menu/飯・焼物')
+@app.route('/menu/risedish')
 def rice():
-    return render_template('menus/risedish.html')
+    return render_template('menus/飯・焼物.html')
 
-@app.route('/menu/スープ・鍋')
+@app.route('/menu/soup')
 def soup():
-    return render_template('menus/soup.html')
+    return render_template('menus/スープ・鍋.html')
 
-@app.route('/menu/アルコール')
+@app.route('/menu/alcohol')
 def beer():
-    return render_template('menus/alcohol.html')
+    return render_template('menus/アルコール.html')
 
-@app.route('/menu/アイス・ソフトドリンク')
+@app.route('/menu/softdrink')
 def ice():
-    return render_template('menus/softdrink.html')
+    return render_template('menus/アイス・ソフトドリンク.html')
 
-@app.route('/menu/ランチ')
+@app.route('/menu/lunch')
 def lunch():
-    return render_template('menus/lunch.html')
+    return render_template('menus/ランチ.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
