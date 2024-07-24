@@ -21,59 +21,55 @@ def access():
 
 @app.route('/menu/大皿')
 def oozara():
-    return render_template('menus/大皿.html')
+    return render_template('menus/platter.html')
 
 @app.route('/menu/特選焼肉')
 def tokusen():
-    return render_template('menus/特選焼肉.html')
+    return render_template('menus/specialbeef.html')
 
 @app.route('/menu/牛焼肉')
 def beef():
-    return render_template('menus/牛焼肉.html')
+    return render_template('menus/beef.html')
 
 @app.route('/menu/豚・鶏焼肉')
 def pork():
-    return render_template('menus/豚・鶏焼肉.html')
+    return render_template('menus/porkchicken.html')
 
 @app.route('/menu/ホルモン')
 def horumon():
-    return render_template('menus/ホルモン.html')
+    return render_template('menus/innards.html')
 
 @app.route('/menu/刺身')
 def rare():
-    return render_template('menus/刺身.html')
+    return render_template('menus/sashimi.html')
 
 @app.route('/menu/サラダ・菜')
 def salad():
-    return render_template('menus/サラダ・菜.html')
+    return render_template('menus/salad.html')
 
 @app.route('/menu/漬物')
 def tukemono():
-    return render_template('menus/漬物.html')
+    return render_template('menus/pickles.html')
 
 @app.route('/menu/飯・焼物')
 def rice():
-    return render_template('menus/飯・焼物.html')
+    return render_template('menus/risedish.html')
 
 @app.route('/menu/スープ・鍋')
 def soup():
-    return render_template('menus/スープ・鍋.html')
+    return render_template('menus/soup.html')
 
 @app.route('/menu/アルコール')
 def beer():
-    return render_template('menus/アルコール.html')
+    return render_template('menus/alcohol.html')
 
 @app.route('/menu/アイス・ソフトドリンク')
 def ice():
-    return render_template('menus/アイス・ソフトドリンク.html')
+    return render_template('menus/softdrink.html')
 
 @app.route('/menu/ランチ')
 def lunch():
-    return render_template('menus/ランチ.html')
-
-@app.route("/test")
-def test():
-    return "<p>test</p>"
+    return render_template('menus/lunch.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
