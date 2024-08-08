@@ -10,7 +10,7 @@ db_url = os.getenv("postgres://default:9nyhCRNvspg7@ep-round-rice-a4ceazjc-poole
 db_user = os.getenv("default")
 db_password = os.getenv("9nyhCRNvspg7")
 db_host = os.getenv("ep-round-rice-a4ceazjc-pooler.us-east-1.aws.neon.tech")
-db_name = os.getenv("visitor")
+db_name = os.getenv("yakiniku-okazaki-bokujo-postgres")
 
 # 接続
 conn = psycopg2.connect(
