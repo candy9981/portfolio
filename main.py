@@ -1,11 +1,34 @@
 from flask import Flask, render_template
+import os
+import psycopg2
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 
+# 環境変数から接続情報を取得
+db_url = os.getenv("postgres://default:9nyhCRNvspg7@ep-round-rice-a4ceazjc-pooler.us-east-1.aws.neon.tech/verceldb?sslmode=require")
+db_user = os.getenv("default")
+db_password = os.getenv("9nyhCRNvspg7")
+db_host = os.getenv("ep-round-rice-a4ceazjc-pooler.us-east-1.aws.neon.tech")
+db_name = os.getenv("visitor")
+
+# 接続
+conn = psycopg2.connect(
+    database=db_name,
+    user=db_user,
+    password=db_password,
+    host=db_host,
+)
+
 @app.route('/')
 def top():
-    return render_template('/home.html')
+    cur = conn.cursor()
+    cur.execute("SELECT count FROM visitor")
+    count = cur.fetchone()[0]
+    count += 1
+    cur.execute("UPDATE visitor SET count = %s;",(count,))
+    conn.commit()
+    return render_template('/home.html',count=count)
 
 @app.route('/menu')
 def menu():
