@@ -1,24 +1,18 @@
 from flask import Flask, render_template
-import os
 import psycopg2
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 
-# 環境変数から接続情報を取得
-db_url = os.getenv("postgres://default:9nyhCRNvspg7@ep-round-rice-a4ceazjc-pooler.us-east-1.aws.neon.tech/verceldb?sslmode=require")
-db_user = os.getenv("default")
-db_password = os.getenv("9nyhCRNvspg7")
-db_host = os.getenv("ep-round-rice-a4ceazjc-pooler.us-east-1.aws.neon.tech")
-db_name = os.getenv("yakiniku-okazaki-bokujo-postgres")
+db_url = "postgres://default:9nyhCRNvspg7@ep-round-rice-a4ceazjc-pooler.us-east-1.aws.neon.tech/verceldb?sslmode=require"
+db_user = "default"
+db_password = "9nyhCRNvspg7"
+db_host = "ep-round-rice-a4ceazjc-pooler.us-east-1.aws.neon.tech"
+db_name = "verceldb"
+db_port = "5432"
 
-# 接続
-conn = psycopg2.connect(
-    database=db_name,
-    user=db_user,
-    password=db_password,
-    host=db_host,
-)
+connect_str = f"dbname='{db_name}' user='{db_user}' password='{db_password}' host='{db_host}' port='{db_port}'"
+conn = psycopg2.connect(connect_str)
 
 @app.route('/')
 def top():
