@@ -11,7 +11,11 @@
       content="岡崎牧場焼肉店,パイン牛,焼肉,焼肉店,宮崎,江平,ドライエイジング,生肉"
     />
     <meta name="author" content="Yakiniku Okazaki Bokujo" />
-    <link rel="alternate" title="岡崎牧場焼肉店" href="https://www.okazaki-bokujyo-yakiniku.com/"/>
+    <link
+      rel="alternate"
+      title="岡崎牧場焼肉店"
+      href="https://www.okazaki-bokujyo-yakiniku.com/"
+    />
     {% block link %} {% include 'link.html' %} {% endblock %}
     <link rel="stylesheet" href="../static/css/home.css" />
     <script type="text/javascript" src="../static/js/jquery.js"></script>
@@ -19,6 +23,16 @@
       type="text/javascript"
       src="../static/js/jquery.flexslider-min.js"
     ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "岡崎牧場焼肉店",
+        "description": "『旨いを届けたい』岡崎牧場焼肉店は、主に自社ブランドのパイン牛を提供している牧場直営の美味しい焼肉屋です。安心安全でより新鮮な商品をお客様にお届けしております。",
+        "url": "https://www.okazaki-bokujyo-yakiniku.com",
+        "image": "https://www.okazaki-bokujyo-yakiniku.com/static/img/shop.jpg"
+      }
+    </script>
     <script type="text/javascript">
       $(window).load(function () {
         $("#MainVisual").flexslider({
@@ -38,11 +52,27 @@
     <div id="MainVisual">
       <div class="flexslider">
         <ul class="slides">
-          <li><img src="../static/img/main.jpg" alt="焼肉メインビジュアル1" /></li>
-          <li><img src="../static/img/migawari1.jpg" alt="焼肉メインビジュアル2" /></li>
-          <li><img src="../static/img/mainvisual.jpg" alt="焼肉メインビジュアル3" /></li>
+          <li>
+            <img src="../static/img/main.jpg" alt="焼肉メインビジュアル1" />
+          </li>
+          <li>
+            <img
+              src="../static/img/migawari1.jpg"
+              alt="焼肉メインビジュアル2"
+            />
+          </li>
+          <li>
+            <img
+              src="../static/img/mainvisual.jpg"
+              alt="焼肉メインビジュアル3"
+            />
+          </li>
         </ul>
-        <img class="catch" src="../static/img/catchcopy.png" alt="キャッチコピー" />
+        <img
+          class="catch"
+          src="../static/img/catchcopy.png"
+          alt="キャッチコピー"
+        />
       </div>
     </div>
     <div class="home">
@@ -75,10 +105,18 @@
       <p class="mb">パイン牛</p>
       <div class="righthome">
         <h3>
-          <img class="hide" src="../static/img/h3-title2.png" alt="パイン牛タイトル" />
+          <img
+            class="hide"
+            src="../static/img/h3-title2.png"
+            alt="パイン牛タイトル"
+          />
         </h3>
         <div class="extd">
-          <img src="../static/img/icon.ico" class="img-fluid" alt="イメージアイコン" />
+          <img
+            src="../static/img/icon.ico"
+            class="img-fluid"
+            alt="イメージアイコン"
+          />
           <p>
             当店ではパイン牛の焼肉をご提供しております。<br />パイン牛とは自社直営の牧場にて、宮崎牛の母牛にパイナップル酵素を含んだ飼料を与え育てた牛です。特に赤身の旨みが際立っており、豊かな風味と旨味が特徴です。
           </p>
