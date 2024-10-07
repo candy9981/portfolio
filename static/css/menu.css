@@ -18,6 +18,12 @@ div.container-m a {
     transform: scale(1.05);
   }
 }
+@media screen and (max-width: 768px) {
+  div.container-m a:hover img {
+    max-height: 100%;
+    opacity: 0.5;
+  }
+}
 div.container-m h2 {
   color: white;
   font-size: 2.5rem;

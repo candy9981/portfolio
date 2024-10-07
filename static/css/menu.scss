@@ -20,6 +20,14 @@ div.container-m {
       }
     }
   }
+  @media screen  and (max-width: 768px){
+    a:hover{
+      img{
+        max-height: 100%;
+        opacity: 0.5;
+      }
+    }
+  }
   h2 {
     color: white;
     font-size: 2.5rem;
