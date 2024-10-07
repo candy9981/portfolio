@@ -56,6 +56,11 @@ div.container-m h2 {
     transform: scale(1.05);
   }
 }
+@media screen and (max-width: 768px) {
+  .custom-card a:hover img {
+    opacity: 0.5;
+  }
+}
 .custom-card .card-body {
   padding: 0;
 }

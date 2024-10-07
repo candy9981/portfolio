@@ -59,6 +59,13 @@ div.container-m {
       }
     }
   }
+  @media screen  and (max-width: 768px){
+    a:hover{
+      img{
+        opacity: 0.5;
+      }
+    }
+  }
   .card-body {
     padding: 0;
   }
