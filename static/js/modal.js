@@ -3,6 +3,9 @@ const btn = document.querySelector("#modal");
 const modalBtn = document.querySelector("#modalBtn");
 const dialog = document.querySelector("#dia");
 const body = document.querySelector("#body");
+const prevbtn = document.getElementById("prevbtn");
+const nextbtn = document.getElementById("nextbtn");
+let count = 1;
 
 //モーダルの作成
 btn.addEventListener("click", () => {
@@ -26,3 +29,21 @@ function changeMainImage(source) {
   let mainImage = document.querySelector("#main-image img");
   mainImage.src = source;
 }
+
+prevbtn.addEventListener("click",()=>{
+  count --;
+  if(count == 0){
+    count = 12;
+  }
+  let src = `../static/img/menubook${count}.jpg`
+  changeMainImage(src);
+})
+
+nextbtn.addEventListener("click",()=>{
+  count ++;
+  if(count == 13){
+    count = 1;
+  }
+  let src = `../static/img/menubook${count}.jpg`
+  changeMainImage(src);
+})

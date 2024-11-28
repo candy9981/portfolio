@@ -148,6 +148,12 @@ dialog {
   padding: 21px 8px 21px;
   text-align: center;
 }
+dialog .prextbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
 dialog::-webkit-scrollbar {
   display: none;
