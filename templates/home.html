@@ -310,7 +310,7 @@
           </div>
         </div>
         <hr />
-        <h3 class="right">アクセス数:{{ count }}</h3>
+        <h3 class="right">アクセス数：<span id="counter">読み込み中...</span></h3>
       </div>
     </div>
     <div class="pagetop">
@@ -327,6 +327,17 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        try {
+          const response = await fetch("/api/count");
+          const data = await response.json();
+          document.getElementById("counter").textContent = data.count;
+        } catch (error) {
+          console.error(error);
+        }
+      });
+    </script>
   </body>
   {% block footer %} {% include 'footer.html'%} {% endblock %}
 </html>
