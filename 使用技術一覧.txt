@@ -6,8 +6,10 @@ front-end
 ・javascript
 ・jQuery(flexslider)
 
-back-end
-・python(flask)
+※静的化の為廃止
+// back-end
+// ・python(flask)
 
-database
-・PostgreSQL
+※静的化の為廃止
+// database
+// ・PostgreSQL
